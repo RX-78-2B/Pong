@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: pong.prj
@@ -105,8 +105,6 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling verilog file "Receiver.v" in library work
-ERROR:HDLCompilers:28 - "Receiver.v" line 99 'keepbit' has not been declared
-ERROR:HDLCompilers:28 - "Receiver.v" line 100 'upcounter' has not been declared
 Compiling verilog file "messenger.v" in library work
 Module <Receiver> compiled
 Compiling verilog file "BaudClockGenerator.v" in library work
@@ -114,12 +112,26 @@ Module <Messenger> compiled
 Compiling verilog file "PONG.v" in library work
 Module <bounderClock> compiled
 Module <pong> compiled
-Analysis of file <"pong.prj"> failed.
+No errors in compilation
+Analysis of file <"pong.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+ERROR:HDLCompilers:87 - "PONG.v" line 69 Could not find module/primitive 'MEMController'
+ERROR:HDLCompilers:87 - "PONG.v" line 76 Could not find module/primitive 'RAM'
+ERROR:HDLCompilers:87 - "PONG.v" line 85 Could not find module/primitive 'GFXController'
+ERROR:HDLCompilers:87 - "PONG.v" line 98 Could not find module/primitive 'INTController'
+ERROR:HDLCompilers:87 - "PONG.v" line 103 Could not find module/primitive 'SystemTimer'
+ERROR:HDLCompilers:87 - "PONG.v" line 109 Could not find module/primitive 'KBDController'
+ERROR:HDLCompilers:87 - "PONG.v" line 136 Could not find module/primitive 'TitleProcessor'
+ERROR:HDLCompilers:87 - "PONG.v" line 153 Could not find module/primitive 'GameProcessor'
 --> 
 
-Total memory usage is 234848 kilobytes
+Total memory usage is 236900 kilobytes
 
-Number of errors   :    2 (   0 filtered)
+Number of errors   :    8 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

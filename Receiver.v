@@ -96,8 +96,8 @@ module Receiver(
 	3: begin
 		loadData=0;
 		ready=0;
-		keepbit=1;
-		upcounter=1;
+		keepTemp=1;
+		addcounter=1;
 		if(counter>=8) nstate=4;
 		else nstate=3;
 		end

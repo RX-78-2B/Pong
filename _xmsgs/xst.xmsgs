@@ -5,10 +5,28 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;Receiver.v&quot; line 99 </arg>&apos;<arg fmt="%s" index="2">keepbit</arg>&apos; has not been declared
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;PONG.v&quot; line 69 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">MEMController</arg>&apos;
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;Receiver.v&quot; line 100 </arg>&apos;<arg fmt="%s" index="2">upcounter</arg>&apos; has not been declared
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;PONG.v&quot; line 76 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">RAM</arg>&apos;
+</msg>
+
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;PONG.v&quot; line 85 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">GFXController</arg>&apos;
+</msg>
+
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;PONG.v&quot; line 98 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">INTController</arg>&apos;
+</msg>
+
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;PONG.v&quot; line 103 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">SystemTimer</arg>&apos;
+</msg>
+
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;PONG.v&quot; line 109 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">KBDController</arg>&apos;
+</msg>
+
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;PONG.v&quot; line 136 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">TitleProcessor</arg>&apos;
+</msg>
+
+<msg type="error" file="HDLCompilers" num="87" delta="new" ><arg fmt="%s" index="1">&quot;PONG.v&quot; line 153 </arg>Could not find module/primitive &apos;<arg fmt="%s" index="2">GameProcessor</arg>&apos;
 </msg>
 
 </messages>
