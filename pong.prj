@@ -1,2 +1,4 @@
+verilog work "Receiver.v"
+verilog work "messenger.v"
 verilog work "BaudClockGenerator.v"
 verilog work "PONG.v"
