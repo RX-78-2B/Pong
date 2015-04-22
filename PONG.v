@@ -43,7 +43,7 @@ module pong(
 	wire [7:0] txData;
 	wire txSend;
 	wire txReady;
-	SerialTransmitter stx(CLK, BCLK, RESET, txData, txSend, OUT_SERIAL_TX, txReady);
+	Messenger mes(BCLK, RESET, txData, txSend, OUT_SERIAL_TX, txReady);
 	
 	/*
 	* Memory controller
