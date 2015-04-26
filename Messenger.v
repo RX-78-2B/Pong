@@ -131,7 +131,7 @@ else nState=5;
 end
 4:begin//เริ่มส่ง isSending คือ statOutให้เป็น 1  beginSending คือทำให้ tx เป็น 0 1 clock
 isSending=1;
-beginSending=1;
+beginSend=1;
 nState =8;
 end
 5:begin// stage สุดท้าย ส่งเสร็จ เคลีย statOut ให้เป็น0
@@ -139,7 +139,7 @@ clrOutStat=1;
 nState=0;
 end
 6:begin // เพิ่ม i ไป 1
-inc=1;
+incI=1;
 nState=7;
 end
 

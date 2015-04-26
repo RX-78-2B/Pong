@@ -28,7 +28,7 @@ output reg [7:0] dataout,
 output finish,
 output reg sendready
     );
-	 reg [7:0] datasend;
+	 reg [7:0] senddata;
 	 reg[3:0] pstate;
 	 reg[3:0] nstate;
  always@(posedge clock)
@@ -101,11 +101,12 @@ always@(posedge clock)
 	 7: if(ready==1) nstate=8;
 	    else nstate=7;	
 	 8: begin
-		 addaddress<=1;
-		 nstate=9;
+		 addaddress=1;
+		 if(address==4095 )nstate=9;
+		 else nstate=1;
 	    end
 	 9: nstate=9;
 	 endcase
 	 end
-assign senddata= (pstate==8);
+	 assign finish = (pstate==9);
 endmodule

@@ -85,7 +85,6 @@ module Receiver(
 		end
 	1: begin
 		resetTemp=0;
-		temp=0;
 		resetcounter=1;
 		nstate=2;
 		end
