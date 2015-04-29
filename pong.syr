@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: pong.prj
 
@@ -384,7 +384,7 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit Messenger : the following signal(s) form a combinatorial loop: pState<5>, clrI, bitOut_not0001, pState<3>, loadSt, beginSend.
+WARNING:Xst:2170 - Unit Messenger : the following signal(s) form a combinatorial loop: pState<3>, beginSend, loadSt, bitOut_not0001, pState<5>, clrI.
 WARNING:Xst:2170 - Unit Messenger : the following signal(s) form a combinatorial loop: clrI.
 
 Optimizing unit <pong> ...
@@ -657,12 +657,12 @@ Offset:              7.165ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.80 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.58 secs
  
 --> 
 
-Total memory usage is 253280 kilobytes
+Total memory usage is 275364 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   72 (   0 filtered)
